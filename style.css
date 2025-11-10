@@ -1,3 +1,4 @@
+/* ======= CONFIGURAÇÕES GERAIS ======= */
 * {
     margin: 0;
     padding: 0;
@@ -5,69 +6,99 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4e1d2;
-    color: #333;
+    font-family: "Poppins", sans-serif;
+    background-color: #f8f3e9;
+    color: #222;
+    line-height: 1.6;
 }
 
-header {
-    background-color: #234e31;
-    padding: 20px;
-    color: white;
+/* ======= CABEÇALHO ======= */
+.topo {
+    background-color: #1b4332;
+    color: #fff;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.portfolio-section h1 {
-    font-size: 3rem;
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+.botao-contato {
+    background-color: #f4a300;
+    color: #1b4332;
+    padding: 8px 16px;
+    border-radius: 20px;
     font-weight: bold;
 }
 
-.navbar ul {
-    display: flex;
-    justify-content: flex-end;
-    gap: 20px;
-    list-style: none;
+.botao-contato:hover {
+    background-color: #ffb703;
 }
 
-.navbar a {
-    color: white;
+/* ======= INTRODUÇÃO ======= */
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px;
+    background-color: #2d6a4f;
+    color: #fff;
+}
+
+.texto-intro {
+    width: 55%;
+}
+
+.texto-intro h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.texto-intro p {
+    margin-bottom: 10px;
+}
+
+.botao-linkedin {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #f4a300;
+    color: #1b4332;
+    padding: 10px 20px;
+    border-radius: 25px;
     text-decoration: none;
     font-weight: bold;
 }
 
-.navbar a.contact-btn {
-    background-color: #f7a100;
-    padding: 10px 20px;
-    border-radius: 5px;
-}
-
-.intro {
-    display: flex;
-    justify-content: space-between;
-    padding: 40px;
-    background-color: #234e31;
-    color: white;
-}
-
-.intro-content h2 {
-    font-size: 2rem;
-}
-
-.intro-content p {
-    margin: 10px 0;
-}
-
-.intro-image img {
-    width: 200px;
-    height: 200px;
+.foto img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
     border-radius: 50%;
+    border: 4px solid #f4a300;
 }
 
+/* ======= SEÇÕES ======= */
 section {
-    padding: 40px;
+    padding: 60px;
+}
+
+.educacao, .experiencia, .habilidades {
+    background-color: #fff;
+    margin: 40px auto;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 h3 {
-    font-size: 1.8rem;
+    color: #1b4332;
+    font-size: 1.8em;
     margin-bottom: 20px;
 }
 
@@ -80,23 +111,22 @@ ul li {
     margin-bottom: 10px;
 }
 
-.skills-list {
+/* ======= HABILIDADES ======= */
+.colunas {
     display: flex;
     justify-content: space-between;
 }
 
-.skills-list div {
+.colunas div {
     width: 45%;
 }
 
+/* ======= RODAPÉ ======= */
 footer {
-    background-color: #234e31;
-    color: white;
+    background-color: #1b4332;
+    color: #fff;
     text-align: center;
     padding: 20px;
-}
-
-footer p {
-    margin: 10px 0;
+    font-size: 0.9em;
 }
 
